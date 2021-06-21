@@ -11,7 +11,7 @@ Note:
 1. Create connection.php inside tools folder.
 2. Here is the contents of the file:
 ```
-$serverName = "DESKTOP-VTQEC12"; 
+$serverName = "your_server"; 
 $connectionInfo = array( "Database"=>"your_database", "UID"=>"your_username", "PWD"=>"your_password");
 $conn = sqlsrv_connect( $serverName, $connectionInfo);
 ```
