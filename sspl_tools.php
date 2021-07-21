@@ -111,6 +111,25 @@ if (isset($argv[1]))
         }
 
     } 
+    elseif ($split1[0] == 'check') {
+
+        if (isset($split1[1])) 
+        {
+            switch($split1[1])
+            {
+
+                case 'connection':
+                    require "tools/check_connection.php";
+                    break;
+    
+            }
+        } 
+        else 
+        {
+            sub_commands();
+        }
+
+    } 
     else 
     {
         echo "\033[33m\nWrong command!\033[37m" . PHP_EOL;
@@ -119,11 +138,17 @@ if (isset($argv[1]))
         available_commands();    
     }
 
+} else {
+    echo "\n";
+    available_commands();
 }
 
 function available_commands() 
 {
     echo "Available commands: \n" . PHP_EOL;
+    echo " check:\n";
+    echo " - connection\t\t -> Check database connection.\n";
+    echo "\n";
     echo " add:\n";
     echo " - timestamp_all\t -> Add created_at, update_at, deleted_at column for all table\n";
     echo " - timestamp_prefix\t -> Add created_at, update_at, deleted_at column for specific table by prefix\n";
