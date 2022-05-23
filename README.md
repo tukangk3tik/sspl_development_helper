@@ -3,7 +3,7 @@ A tool that I created to help me develop an integrated system in a plantation co
 This tool can also be used for other projects
 
 Note:
-* Use MS. SQL Server
+* DBMS used is MS. SQL Server
 * PHP CLI
 * Config the connection first
 
