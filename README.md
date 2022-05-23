@@ -1,15 +1,15 @@
 # sspl_development_helper
-This tools was created for help me developing integrated system in a plantation company.
-Can use for other project.
+A tool that I created to help me develop an integrated system in a plantation company.
+This tool can also be used for other projects
 
 Note:
-* Only for SQL Server
-* For CLI only
-* Please config the connection first
+* Use MS. SQL Server
+* PHP CLI
+* Config the connection first
 
 #### How to config the connection: ####
 1. Create connection.php inside tools folder.
-2. Here is the contents of the file:
+2. Add the following content to the file:
 ```
 $serverName = "your_server"; 
 $connectionInfo = array( "Database"=>"your_database", "UID"=>"your_username", "PWD"=>"your_password");
